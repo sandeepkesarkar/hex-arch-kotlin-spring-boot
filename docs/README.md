@@ -124,7 +124,7 @@ The entry point (left side of diagram) of AWS Triggers to use the application la
 ### Run the microservice
 `./gradlew clean :voter-ms:bootRun`
 ### Run the lambda
-See the [Lambda README](voter-lambda/README.md)
+See the [Lambda README](../voter-lambda/README.md)
 
 # Communication Across Layers
 When communicating across layers, to prevent exposing the details of the domain model to the outside world, you don’t pass domain objects across boundaries. For the same reasons, you don’t send raw, unchecked user input straight into the domain layer. Instead, you use simple data transfer objects (DTOs), presentation models, and application event objects to communicate changes or actions in the domain.
